@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png">
+    <title>Bookmarker</title>
+</head>
+<body> 
+    
+    <section>
+        <div class="container">
+            <div class="row mx-3">
+                <div class="col-12">
+                    <div class="title my-5">
+                    <h2 class="ms-3">Bookmarker</h2>
+                    </div>
+                    <hr>
+                    <div class="inputs-form my-2 text-center py-5 mx-3">
+                        <div class="form-title overflow-hidden">
+                            <h4 class="mb-4">Bookmark your favorite sites</h4>
+                        </div>
+                        <div class="inputs">
+                            <label class="mb-3">Site Name</label>
+                            <br>
+                            <input class="form-control w-75 m-auto border-0" type="text" name="BookmarkerName" id="siteName" placeholder="Bookmarker Name">
+                            <div class="alert alert-danger w-75 m-auto my-3 py-1 d-none" id="alert"> Site name must be at least 3 characters and no more than 10 characters</div>
+                            <br>
+                            <label class="my-3">Site URL</label>
+                            <br>
+                            <input class="form-control w-75 m-auto border-0" type="text" name="websiteURL" id="siteUrl" placeholder="website URL">
+                            <br>
+                            <button type="submit" id="submitBtn" class="btn btn-primary mt-3" disabled>Add Site</button>
+                        </div>
+                    </div>
+                    <input class="form-control w-75 m-auto my-4 border-info" type="search" id="search" autocomplete="off" placeholder="Search By Site Name....">
+                    
+                        <table class="table mx-3 table-hover table-striped">
+                            <thead>
+                              <tr class="table-bordered table-light text-primary">
+                                <th scope="col-md-4">SiteName</th>
+                                <th scope="col-md-2">View</th>
+                                <th scope="col-md-2">Delete</th>
+                                <th scope="col-md-2">Update</th>
+                              </tr>
+                            </thead>
+                            <tbody id="sitesTable">
+
+                             <!-- sites -->
+
+                            </tbody>
+                        </table>
+
+                    <hr>
+                    <p class="ms-3">© 2019 Bookmarker Inc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

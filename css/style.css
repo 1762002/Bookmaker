@@ -1,0 +1,35 @@
+
+.title h2 {
+    color: #aaa;
+    font-weight: 700;
+}
+
+.inputs-form {
+    background-color: #eee;
+}
+
+label {
+    font-weight: 700;
+}
+
+.site {
+    background-color: #eee;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px gray;
+}
+
+::placeholder {
+    font-weight: 700 !important;
+    color: rgb(134, 167, 226) !important;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
